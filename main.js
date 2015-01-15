@@ -31,3 +31,12 @@ var gbp_item = items.filter ( function(x) {
 // Output, only one item
 // but doing it in a loop becase in the future maybe there will be more
 gbp_item.forEach ( function(x) { console.log(x.title); });
+
+
+// Filter for wood
+// Check the materials array under each object for wood.
+var wood_items = items.filter ( function(x) {
+    return x.materials.indexOf("wood") > -1;
+});
+
+wood_items.forEach( function(x) { console.log(x.title + " is made of wood."); });
