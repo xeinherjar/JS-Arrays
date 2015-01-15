@@ -8,10 +8,11 @@ var acc_prices = item_prices.reduce( function(acc, x) {
 });
 var avg = acc_prices / items.length;
 // Expect decimal to two places.
-avg = avg.toFixed(2);
+avg = avg.toString();
+avg = avg.substring(0, 5);
 
 // Output
-console.log("The average price is " + avg);
+console.log("The average price is $" + avg);
 console.log("\n\n");
 
 // Find items above $14 but less than $18
