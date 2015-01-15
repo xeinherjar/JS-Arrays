@@ -59,6 +59,14 @@ eight_mat_items.forEach (
     });
 
 
+// Who made, more filtering.
+var seller_made_items = items.filter( function(x) {
+  return x.who_made === "i_did";
+});
+
+console.log(seller_made_items.length + " were made by their sellers");
+
+
 
 
 
