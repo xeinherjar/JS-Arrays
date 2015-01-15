@@ -65,4 +65,43 @@ var lexicon = {
   "new": "nytt",
   "year": "år",
 }
-}
+
+function findLongestWord(arr) {
+  var max_len_found = 0;
+  var max_word = "";
+
+  arr.forEach( function(x) {
+    if (x.length > max_len_found) {
+      max_len_found = x.length;
+      max_word = x;
+    }
+  });
+
+  return max_word;
+};
+
+
+function filterLongWords(arr, i) {
+  var filtered = arr.filter( function(x) {
+    return x.length > i;
+  });
+
+  return filtered;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
