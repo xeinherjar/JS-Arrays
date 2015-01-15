@@ -56,3 +56,13 @@ function reverse(str) {
   }
   return rev_str;
 }
+
+var lexicon = {
+  "merry": "god",
+  "christmas": "jul",
+  "and": "och",
+  "happy": "gott",
+  "new": "nytt",
+  "year": "år",
+}
+}
