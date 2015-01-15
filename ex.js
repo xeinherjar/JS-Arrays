@@ -34,3 +34,17 @@ function translate(str) {
   }
   return trans_str;
 };
+
+function sum(arr) {
+  var sum = arr.reduce( function(acc, x) {
+    return acc + x;
+  });
+  return sum;
+};
+
+function multiply(arr) {
+  var mul = arr.reduce( function(acc, x) {
+    return acc * x;
+  });
+  return mul;
+};
