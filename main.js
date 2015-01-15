@@ -39,4 +39,26 @@ var wood_items = items.filter ( function(x) {
     return x.materials.indexOf("wood") > -1;
 });
 
-wood_items.forEach( function(x) { console.log(x.title + " is made of wood."); });
+wood_items.forEach( 
+    function(x) { console.log(x.title + " is made of wood."); 
+});
+
+
+// Filter for more than 8 materials
+// Same as above, only checking length.
+var eight_mat_items = items.filter( function(x) {
+  return x.materials.length >= 8;
+});
+
+eight_mat_items.forEach (
+    function(x) { 
+      console.log(x.title);
+      x.materials.forEach( function(x) {
+        console.log(x); 
+      });
+    });
+
+
+
+
+
