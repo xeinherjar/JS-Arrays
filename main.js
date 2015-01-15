@@ -15,9 +15,19 @@ console.log("The average price is " + avg);
 
 
 
-
+// Find items above $14 but less than $18
 var items_filtered = items.filter( function(x) {
   return x.price > 14 && x.price < 18;
 });
 
 console.log("Items that cost between $14.00 USD and $18.00 USD:", items_filtered);
+
+
+
+// Filter GBP
+var gbp_item = items.filter ( function(x) {
+  return x.currency_code === "GBP";
+});
+// Output, only one item
+// but doing it in a loop becase in the future maybe there will be more
+gbp_item.forEach ( function(x) { console.log(x.title); });
