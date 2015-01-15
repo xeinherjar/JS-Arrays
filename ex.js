@@ -5,3 +5,9 @@ function max(x, y) {
     return y;
   }
 };
+
+
+function maxOfThree(a, b, c) {
+  var x = max(a, b);
+  return max(x, c);
+};
