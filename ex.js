@@ -90,7 +90,14 @@ function filterLongWords(arr, i) {
 };
 
 
-
+function charFreq(str) {
+  var freq_count = {};
+  for (var i = 0; i < str.length; i++) {
+    var c = str[i];
+    freq_count[c] = freq_count[c] +1 || 1;
+  }
+  return freq_count;
+};
 
 
 
