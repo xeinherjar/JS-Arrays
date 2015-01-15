@@ -12,8 +12,7 @@ avg = avg.toFixed(2);
 
 // Output
 console.log("The average price is " + avg);
-
-
+console.log("\n\n");
 
 // Find items above $14 but less than $18
 var items_filtered = items.filter( function(x) {
@@ -21,8 +20,7 @@ var items_filtered = items.filter( function(x) {
 });
 
 console.log("Items that cost between $14.00 USD and $18.00 USD:", items_filtered);
-
-
+console.log("\n\n");
 
 // Filter GBP
 var gbp_item = items.filter ( function(x) {
@@ -31,6 +29,7 @@ var gbp_item = items.filter ( function(x) {
 // Output, only one item
 // but doing it in a loop becase in the future maybe there will be more
 gbp_item.forEach ( function(x) { console.log(x.title); });
+console.log("\n\n");
 
 
 // Filter for wood
@@ -42,6 +41,7 @@ var wood_items = items.filter ( function(x) {
 wood_items.forEach( 
     function(x) { console.log(x.title + " is made of wood."); 
 });
+console.log("\n\n");
 
 
 // Filter for more than 8 materials
@@ -57,6 +57,7 @@ eight_mat_items.forEach (
         console.log(x); 
       });
     });
+console.log("\n\n");
 
 
 // Who made, more filtering.
