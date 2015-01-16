@@ -26,7 +26,7 @@ function translate(str) {
   var trans_str = "";
   for (var i = 0; i < str.length; i++) {
     var c = str[i];
-    if (isVowel(c)) {
+    if (isVowel(c) || c === " ") {
       trans_str += c;
     } else {
       trans_str += c + "o" + c;
